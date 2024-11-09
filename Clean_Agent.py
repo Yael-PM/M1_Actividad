@@ -54,7 +54,7 @@ class CleaningModel:
         self.step_actual += 1
 
     def is_clean(self):
-        # Verifica si no hay celdas sucias (es decir, todas son 0)
+        # Verifica si no hay celdas sucias
         return np.all(self.grid == 0)
 
 def actualizar_vista(model, grid_display, progress_bar, ax, stats_text):
